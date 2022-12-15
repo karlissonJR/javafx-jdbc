@@ -34,3 +34,5 @@ nbdist/
 .classpath
 .project
 .settings
+
+db.properties
