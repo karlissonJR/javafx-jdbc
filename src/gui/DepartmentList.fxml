@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox minHeight="200.0" minWidth="200.0" prefHeight="368.0" prefWidth="464.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="675.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="controller.DepartmentListController">
    <children>
       <Label text="Department Registration">
          <font>
@@ -19,13 +19,13 @@
       </Label>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
-          <Button mnemonicParsing="false" text="New" />
+          <Button fx:id="btnNew" mnemonicParsing="false" onAction="#onBtnNewAction" text="New" />
         </items>
       </ToolBar>
-      <TableView prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tableViewDepartment" prefHeight="398.0" prefWidth="591.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Id" />
-          <TableColumn prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Name" />
         </columns>
       </TableView>
    </children>
