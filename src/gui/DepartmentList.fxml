@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="675.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="controller.DepartmentListController">
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DepartmentListController">
    <children>
       <Label text="Department Registration">
          <font>
@@ -26,6 +25,7 @@
         <columns>
           <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
           <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="tableColumnEdit" prefWidth="75.0" />
         </columns>
       </TableView>
    </children>
